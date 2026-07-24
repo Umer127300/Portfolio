@@ -1,0 +1,72 @@
+import React from 'react'
+import "../App.css";
+const Home = ({dark , setDark}) => {
+  return (
+    <div>
+      
+      <section
+  id="home"
+  className="min-h-screen flex flex-col justify-center items-center text-center px-5"
+>
+  <p className={`text-lg md:text-xl
+     ${
+      dark ? '  text-gray-500': ' text-gray-400  '
+    }
+    `}>
+    Hello, I'm
+  </p>
+
+  <h1 className="text-6xl md:text-8xl font-black">
+  <span className="name-effect">
+    Umer
+  </span>
+</h1>
+
+  <h2 className={`mt-4 text-2xl md:text-4xl font-bold  
+      ${
+      dark ? '  text-gray-700 ': ' text-gray-300  '
+    }
+    `}>
+    Frontend Developer
+  </h2>
+
+  <p className={`mt-6 max-w-2xl  leading-8
+    
+     ${
+      dark ? '  text-gray-600 ': ' text-gray-300  '
+    }
+    `}>
+    I build modern, responsive and interactive web applications using
+    React.js, JavaScript and Tailwind CSS with clean UI and smooth user
+    experience.
+  </p>
+
+  <div className="mt-8 flex flex-col w-full  sm:flex sm:flex-row justify-center gap-4">
+   <a
+  href="#project"
+  className="px-8 py-4 rounded-full text-white font-semibold
+             bg-indigo-600  hover:bg-violet-600
+             shadow-[0_10px_30px_rgba(99,102,241,0.35)]
+             hover:scale-105
+             hover:shadow-[0_15px_40px_rgba(99,102,241,0.45)]
+             transition-all duration-300"
+>
+  View Projects
+</a>
+
+    <a
+      href="#contact"
+      className="px-8 py-4 rounded-full font-semibold
+             border-2 border-indigo-500 text-indigo-600
+             hover:bg-indigo-500 hover:text-white
+             transition-all duration-300 hover:border-violet-500"
+    >
+      Contact Me
+    </a>
+  </div>
+</section>
+    </div>
+  )
+}
+
+export default Home

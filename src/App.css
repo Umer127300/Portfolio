@@ -1,0 +1,35 @@
+.name-effect {
+  background: linear-gradient(
+    90deg,
+    #8d6ea6,
+    #4294f2,
+    #58aec1,
+    #22c55e,
+    #d51a90,
+    #8d6ea6
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% center;
+  }
+
+  to {
+    background-position: 0% center;
+  }
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+}
