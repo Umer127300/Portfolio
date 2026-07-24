@@ -57,7 +57,7 @@ msg:"Let's chat directly",
     <h4 className={`mt-6
       ${dark?'text-black/70': 'text-white/70'}
       `}>Let's turn your ideas into modern, responsive, and user-friendly web experiences. I'm always open to freelance projects, collaborations, and full-time opportunities. Feel free to get in touch.</h4>
-<div className='grid grid-cols-5 gap-7 mt-15'>
+<div className='grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-center items-center gap-7 mt-15'>
   {platform.map((elem, index)=>{
     
     return <a href={elem.link}
