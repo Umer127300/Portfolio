@@ -6,8 +6,12 @@ const Contact = ({dark, setDark}) => {
     icon:<FaLinkedinIn className=' text-[#0A66C2] '/>,
    msg:"Let's connect",
    msg2:"CONNECT NOW",
-   bgColor: "bg-blue-50",
-    borderColor: "border-blue-200",
+   lightBg: "bg-[#EFF6FF]",
+    darkBg: "bg-[#172554]",
+
+    lightBorder: "border-[#BFDBFE]",
+    darkBorder: "border-[#2563EB]",
+    hoverBorder: "hover:border-[#3B82F6]",
     msg2Color: "text-[#0A66C2]",
     link:"https://www.linkedin.com/in/umer-zaman-219369326/"
   },
@@ -15,8 +19,12 @@ const Contact = ({dark, setDark}) => {
      icon:< FaEnvelope className=' text-[#FF3B3B] ' />,
     msg:"Send me a message",
     msg2:"SEND MESSAGE",
-     bgColor: "bg-red-50",
-    borderColor: "border-red-200",
+     lightBg: "bg-[#FEF2F2]",
+    darkBg: "bg-[#2A1620]",
+
+    lightBorder: "border-[#FECACA]",
+    darkBorder: "border-[#DC2626]",
+    hoverBorder: "hover:border-[#EF4444]",
     msg2Color: "text-[#FF3B3B]",
     link:"mailto:umer127300@gmail.com"
   },
@@ -24,8 +32,11 @@ const Contact = ({dark, setDark}) => {
      icon:<FaWhatsapp className=' text-[#25D366]' />,
 msg:"Let's chat directly",
     msg2:"CHAT NOW",
-    bgColor: "bg-green-50",
-    borderColor: "border-green-200",
+    lightBg: "bg-[#F0FDF4]",
+    darkBg: "bg-[#0F2A24]",
+
+    lightBorder: "border-[#BBF7D0]",
+    darkBorder: "border-[#16A34A]",
     msg2Color: "text-[#25D366]",
     link:"https://wa.me/923098916423"
   },
@@ -33,8 +44,12 @@ msg:"Let's chat directly",
      icon:<FaFacebookF className=' text-[#1877F2]' />,
     msg:"See what i'm up to",
     msg2:"FOLLOW ME",
-    bgColor: "bg-blue-50",
-    borderColor: "border-blue-200",
+    lightBg: "bg-[#EFF6FF]",
+    darkBg: "bg-[#172554]",
+
+    lightBorder: "border-[#BFDBFE]",
+    darkBorder: "border-[#2563EB]",
+    hoverBorder: "hover:border-[#3B82F6]",
     msg2Color: "text-[#1877F2]",
     link:"https://www.facebook.com/profile.php?id=61577620126344/"
   },
@@ -44,8 +59,12 @@ msg:"Let's chat directly",
       `}/>,
     msg:"Explore my code",
    msg2:"VIEW PROFILE",
-   bgColor: "bg-gray-50",
-    borderColor: "border-gray-200",
+    lightBg: "bg-[#F8FAFC]",
+    darkBg: "bg-[#1F2937]",
+
+    lightBorder: "border-[#E2E8F0]",
+    darkBorder: "border-[#475569]",
+    hoverBorder: "hover:border-[#94A3B8]",
     msg2Color: "text-[#24292F]",
     link:"https://github.com/Umer127300"
   }
@@ -62,15 +81,25 @@ msg:"Let's chat directly",
     
     return <a href={elem.link}
     key={index}     
-     className={`group min-h-70 max-w-80 ${elem.bgColor} rounded-3xl border border-solid hover:scale-105 transition-all duration-700 ${elem.borderColor}`}
+     className={`group min-h-70 max-w-80  rounded-3xl border border-solid hover:scale-105 transition-all duration-700 ${elem.hoverBorder} 
+     ${
+      dark? `${elem.lightBg}  ${elem.lightBorder} ` :`${elem.darkBorder} ${elem.darkBg} `
+     }
+     
+     `}
     > 
       <div className=' flex justify-center items-center mt-6'>
         <div className={`rounded-full h-20 w-20  flex justify-center items-center text-5xl group-hover:scale-110 transition-all duration-300
            ${dark?'bg-white':'bg-black/80'}
           `}>{elem.icon}</div>
         </div>
-       <h2 className='text-2xl text-black mt-3 font-semibold'>{elem.Name}</h2>
-      <h4 className='mt-2 text-black/70 text-sm'>{elem.msg}</h4>
+       <h2 className={`text-2xl  mt-3 font-semibold
+         ${dark?'text-black':'text-White'}
+        
+        `}>{elem.Name}</h2>
+      <h4 className={`mt-2  text-sm
+        ${dark?'text-black/70':'text-white/70'}
+        `}>{elem.msg}</h4>
       <div className={`mt-8 ${elem.msg2Color} text-sm font-bold flex gap-2 group-hover:gap-4 transition-all duration-500 justify-center items-center`}>
         <h3>
         {elem.msg2}

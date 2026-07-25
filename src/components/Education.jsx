@@ -17,7 +17,7 @@ const Education = ({dark, setDark}) => {
          ${dark? 'text-black/70': 'text-white/70'}
         
         `}>A combination of academic education and practical experience that has shaped my technical foundation.</p>
-        <div className={`  relative min-h-auto  rounded-2xl hover:border-2 hover:border-solid hover:border-indigo-300  hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 p-6 pt-12 flex flex-col mt-15
+        <div className={`  relative min-h-auto  rounded-2xl border-2 border-transparent hover:border-2 hover:border-solid hover:border-indigo-400  hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 p-6 pt-12 flex flex-col mt-15 
              ${
             dark? 'bg-white text-black  ':'bg-gray-800  text-white/60 '
           }
