@@ -29,27 +29,22 @@ const About = ({dark, setDark}) => {
 </div>
         {/* Right Side */}
         <div className='mt-15 md:mt-0 flex flex-col justify-center text-center lg:text-left w-full'>
-          <h2 className={`text-black text-wrap text-3xl
-sm:text-4xl
-lg:text-5xl font-bold mb-2 gap-3 
+              <h2 className="text-[#1de849] text-sm tracking-[0.2rem] uppercase font-medium pl-8">
+ who i am
+</h2>
+          <h2 className={`text-black text-wrap text-3xl mt-2
+md:text-4xl font-bold mb-4 gap-3 
             ${
               dark?'text-black':'text-white'
             }
             
             `}>
-            About <span className='text-indigo-600'>Me</span>
+            About <span className='text-[#21CDE8]'>Me</span>
           </h2>
 
-            <h2 className={`text-xl sm:text-2xl font-bold mb-6
-              ${
-      dark ? '  text-gray-700 ': ' text-gray-300  '
-    }
-              `}>
-            Frontend React Developer
-          </h2>
-
+          
           <p
-           className={`  leading-8 mb-6 text-base sm:text-lg font-normal
+           className={`  leading-8 mb-6 text-base sm:text-md font-normal
            
            ${
             dark? 'text-black/70':'text-white/70'
@@ -70,22 +65,22 @@ lg:text-5xl font-bold mb-2 gap-3
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div>
-              <h3 className="text-indigo-600  font-semibold">Name</h3>
+              <h3 className="text-[#44bccf]  font-semibold">Name</h3>
               <p className={`${dark? 'text-black':'text-white'}`}>Umer Zaman</p>
             </div>
 
             <div>
-              <h3 className="text-indigo-600  font-semibold">Email</h3>
+              <h3 className="text-[#44bccf]   font-semibold">Email</h3>
               <p className={`${dark? 'text-black':'text-white'}`}>umer127300@gmail.com</p>
             </div>
 
             <div>
-              <h3 className="text-indigo-600  font-semibold">Location</h3>
+              <h3 className="text-[#44bccf]   font-semibold">Location</h3>
               <p className={`${dark? 'text-black':'text-white'}`}>Pakistan</p>
             </div>
 
             <div>
-              <h3 className="text-indigo-600  font-semibold">Experience</h3>
+              <h3 className="text-[#44bccf]   font-semibold">Experience</h3>
               <p className={`${dark? 'text-black':'text-white'}`}>Frontend Developer</p>
             </div>
           </div>
@@ -96,7 +91,7 @@ lg:text-5xl font-bold mb-2 gap-3
           
           className={`text-black w-full lg:w-fit px-6 py-3 rounded-full font-bold  active:scale-95 transition-all duration-500 hover:scale-110 flex gap-2 justify-center  border border-solid border-black/15 
                 ${
-            dark? 'text-black bg-white hover:text-indigo-600  ':'text-white  bg-[#334155] hover:text-white '
+            dark? 'text-black bg-white hover:text-[#44bccf]  ':'text-white  bg-[#334155] hover:text-white '
            } 
             
 

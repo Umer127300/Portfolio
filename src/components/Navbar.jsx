@@ -35,10 +35,13 @@ document.body.classList.toggle('dark')
 
          {/* name and logo div */}
       <div className="group flex justify-center items-center pl-5">
-        <p className="h-10 w-10 rounded-xl flex justify-center items-center bg-indigo-700 text-sm text-white font-extrabold pb-1 transition-transform duration-500 group-hover:scale-110">
-           &lt;/&gt; 
+        <p className=" relative h-12 w-12 rounded-full flex justify-center items-center bg-[#55c6d7] text-sm text-white font-extrabold pb-1 transition-transform duration-500 ">
+           {/* &lt;/&gt;  */}
+           <img src="umer-logo.png" 
+          className='absolute h-full w-full'
+           />
         </p>
-        <h2 className="ml-3 text-2xl font-bold text-indigo-600">Umer</h2>
+        <h2 className="ml-3 text-2xl font-bold text-[#21CDE8]">Umer</h2>
       </div>
 
 

@@ -66,22 +66,27 @@ msg:"Let's chat directly",
     darkBorder: "border-[#475569]",
     hoverBorder: "hover:border-[#94A3B8]",
     msg2Color: "text-[#24292F]",
+    msg2DarkColor: "text-[#E5E7EB]",
     link:"https://github.com/Umer127300"
   }
 
   ]
   return (
     <section id="skills"
-      className=" text-white py-20 px-8 md:px-20 text-center"><h2 className='text-5xl text-indigo-600 font-bold'>Get In Touch</h2>
+      className=" text-white py-20 px-8 md:px-20 text-center">
+        <h2 className="text-[#1de849] text-sm tracking-[0.4rem] uppercase font-medium">
+  LET'S TALK
+</h2>
+        <h2 className='text-5xl text-[#21CDE8] font-bold mt-3'>Get In Touch</h2>
     <h4 className={`mt-6
       ${dark?'text-black/70': 'text-white/70'}
       `}>Let's turn your ideas into modern, responsive, and user-friendly web experiences. I'm always open to freelance projects, collaborations, and full-time opportunities. Feel free to get in touch.</h4>
-<div className='grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-center items-center gap-7 mt-15'>
+<div className='grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-7 mt-15'>
   {platform.map((elem, index)=>{
     
     return <a href={elem.link}
     key={index}     
-     className={`group min-h-70 max-w-80  rounded-3xl border border-solid hover:scale-105 transition-all duration-700 ${elem.hoverBorder} 
+     className={`group min-h-60 w-full   rounded-3xl border border-solid hover:scale-105 transition-all duration-700 ${elem.hoverBorder} 
      ${
       dark? `${elem.lightBg}  ${elem.lightBorder} ` :`${elem.darkBorder} ${elem.darkBg} `
      }
@@ -100,7 +105,12 @@ msg:"Let's chat directly",
       <h4 className={`mt-2  text-sm
         ${dark?'text-black/70':'text-white/70'}
         `}>{elem.msg}</h4>
-      <div className={`mt-8 ${elem.msg2Color} text-sm font-bold flex gap-2 group-hover:gap-4 transition-all duration-500 justify-center items-center`}>
+      <div className={`mt-8 } text-sm font-bold flex gap-2 group-hover:gap-4 transition-all duration-500 justify-center items-center ${elem.msg2Color}
+     ${
+ index === 4
+    ? (dark ? elem.msg2Color : elem.msg2DarkColor)
+    : ""}
+      `}>
         <h3>
         {elem.msg2}
         </h3>

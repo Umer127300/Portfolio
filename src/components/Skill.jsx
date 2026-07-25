@@ -61,7 +61,7 @@ const Skill = ({dark, setDark }) => {
           dark? 'text-black':'text-white'
         }
         `}>
-        My <span className="text-indigo-600">Skills</span>
+        My <span className="text-[#21CDE8]">Skills</span>
       </h2>
       <p className={`mb-10 text-center px:5 md:px-20
         ${dark? 'text-black/70': 'text-white/70'}
@@ -69,7 +69,7 @@ const Skill = ({dark, setDark }) => {
         `}>Focused on Frontend Development, I specialize in building responsive and modern web applications using React, Tailwind CSS, and JavaScript. I create clean, interactive, and user-friendly interfaces with a strong focus on performance, accessibility, and seamless user experiences.
 </p>
 <div  className=' grid md:grid-cols-2 items-center justify-center gap-12'>
-      <div className={`flex flex-col justify-center items-center gap-6 w-full max-w-150 h-auto mx-auto  border border-solid border-black/2 rounded-2xl p-5 hover:border-indigo-300  hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 hover:-translate-y-2 cursor-pointer  
+      <div className={`flex flex-col justify-center items-center gap-6 w-full max-w-150 h-auto mx-auto  border border-solid border-black/2 rounded-2xl p-5 hover:border-[#76e3f4] hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 hover:-translate-y-2 cursor-pointer  
           ${
             dark? 'bg-white text-black  ':'bg-gray-800  text-white/60 '
           }
@@ -99,7 +99,7 @@ const Skill = ({dark, setDark }) => {
 
 
 
-         <div className={`flex flex-col justify-between items-center gap-6 w-full max-w-150 h-auto mx-auto  border border-solid border-black/2 rounded-2xl p-5 hover:border-indigo-300  hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 hover:-translate-y-2 cursor-pointer  
+         <div className={`flex flex-col justify-between items-center gap-6 w-full max-w-150 h-auto mx-auto  border border-solid border-black/2 rounded-2xl p-5 hover:border-[#76e3f4]  hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transition-all duration-500 hover:-translate-y-2 cursor-pointer  
           ${
             dark? 'bg-white text-black  ':'bg-gray-800  text-white/60 '
           }
