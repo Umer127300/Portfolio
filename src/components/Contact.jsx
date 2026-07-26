@@ -78,7 +78,7 @@ const openChat=()=>{
 if (window.$crisp) {
     window.$crisp.push(["do", "chat:open"]);
   }
- dd
+ 
 }
 
   return (
