@@ -73,6 +73,14 @@ msg:"Let's chat directly",
   }
 
   ]
+
+const openChat=()=>{
+if (window.$crisp) {
+    window.$crisp.push(["do", "chat:open"]);
+  }
+ dd
+}
+
   return (
     <section id="Contact"
       className=" text-white py-20 px-8 md:px-20 text-center">
@@ -126,10 +134,7 @@ msg:"Let's chat directly",
     </a>
   })}
 </div>
-      <div   onClick={()=>{
-          console.log('hello');
-          
-        }} className='flex justify-center items-center mt-15 mb-8'>
+      <div   onClick={openChat} className='flex justify-center items-center mt-15 mb-8'>
         <div className={`h-min-42 w-full sm:w-140 hover:-translate-y-2 transition-all duration-500  text-black border border-solid border-black/10 hover:border-[#76e3f4]  rounded-2xl flex flex-col sm:flex-row py-7 pr-7 pl-3 justify-center items-center sm:justify-start sm:items-start
           ${
             dark? 'bg-white':'bg-[#1F2937]'
