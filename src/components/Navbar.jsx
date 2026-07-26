@@ -35,7 +35,7 @@ document.body.classList.toggle('dark')
 
          {/* name and logo div */}
       <div className="group flex justify-center items-center pl-5">
-        <p className=" relative h-12 w-12 rounded-full flex justify-center items-center bg-[#55c6d7] text-sm text-white font-extrabold pb-1 transition-transform duration-500 ">
+        <p className=" relative h-11 w-11 rounded-full flex justify-center items-center bg-[#55c6d7] text-sm text-white font-extrabold pb-1 transition-transform duration-500 ">
            {/* &lt;/&gt;  */}
            <img src="umer-logo.png" 
           className='absolute h-full w-full'
@@ -55,7 +55,7 @@ document.body.classList.toggle('dark')
     <a href="#home"
     className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center transition-all duration-500 
 ${
-      dark ? ' bg-white text-indigo-600  ': ' bg-[#334155]  text-white   '
+      dark ? ' bg-white text-[#21CDE8]  ': ' bg-[#334155]  text-white   '
     }
 
    ` }
@@ -65,7 +65,7 @@ ${
      className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70   transition-all duration-500
       
       ${
-      dark ? ' hover:bg-white  hover:text-[#463BFF] ': ' hover:bg-[#334155] hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
       
       
@@ -75,7 +75,7 @@ ${
     <a href="#skill"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70 transition-all duration-500
         ${
-      dark ? ' hover:bg-white  hover:text-indigo-600 ': ' hover:bg-[#334155] hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
      
         `}
@@ -84,7 +84,7 @@ ${
     <a href="#project"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70  transition-all duration-500
         ${
-      dark ? ' hover:bg-white  hover:text-indigo-600': ' hover:bg-[#334155] hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8]': ' hover:bg-[#334155] hover:text-white/95  '
     }
     
         `}
@@ -93,7 +93,7 @@ ${
     <a href="#Contact"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70  transition-all duration-500
          ${
-      dark ? ' hover:bg-white  hover:text-indigo-600 ': ' hover:bg-[#334155] hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
      
         `}
@@ -106,7 +106,7 @@ ${
         <div>
         <button
         onClick={themeChange}
-        className={`h-11 w-11 rounded-full border-2 border-solid border-indigo-300 mr-2 
+        className={`h-11 w-11 rounded-full border-2 border-solid border-[#79c3ce] mr-2 
              ${
       dark ? 'bg-white  text-black': ' bg-black/50 text-amber-500   '
     }

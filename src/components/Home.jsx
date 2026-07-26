@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css";
+import { FaArrowRight  } from "react-icons/fa";
 const Home = ({dark , setDark}) => {
   return (
     <div>
@@ -45,23 +46,27 @@ const Home = ({dark , setDark}) => {
    <a
   href="#project"
   className="px-8 py-4 rounded-full text-white font-semibold
-             bg-indigo-600  hover:bg-violet-600
+             bg-[#21CDE8]  hover:bg-[#59d4e7]
              shadow-[0_10px_30px_rgba(99,102,241,0.35)]
              hover:scale-105
              hover:shadow-[0_15px_40px_rgba(99,102,241,0.45)]
-             transition-all duration-300"
+             transition-all duration-500 flex justify-center items-center gap-2 hover:gap-3"
 >
   View Projects
+   <span><FaArrowRight /></span>
 </a>
 
     <a
       href="#contact"
-      className="px-8 py-4 rounded-full font-semibold
-             border-2 border-indigo-500 text-indigo-600
-             hover:bg-indigo-500 hover:text-white
-             transition-all duration-300 hover:border-violet-500"
+      className={`px-8 py-4 rounded-full font-semibold
+             border border-black/10 hover:text-[#21CDE8]
+             transition-all duration-500 
+                hover:scale-105 
+                ${dark? 'text-black bg-white':'text-white  bg-[#334155]'}
+                `}
     >
-      Contact Me
+      Contact Me 
+     
     </a>
   </div>
 </section>

@@ -14,7 +14,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, dark }) => {
         <a
           href="#home"
           onClick={() => setMenuOpen(false)}
-          className="group px-4 py-3 rounded-xl hover:bg-[#463BFF] hover:text-white transition-all duration-700 font-semibold"
+          className="group px-4 py-3 rounded-xl hover:bg-[#21CDE8] hover:text-white transition-all duration-700 font-semibold"
         >
           <i className="fa-regular fa-house mr-3 transition-all-transform duration-700 group-hover:text-lg"></i>
           Home
@@ -23,7 +23,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, dark }) => {
         <a
           href="#about"
           onClick={() => setMenuOpen(false)}
-          className="group px-4 py-3 rounded-xl hover:bg-[#463BFF] hover:text-white transition-all duration-700 font-semibold"
+          className="group px-4 py-3 rounded-xl hover:bg-[#21CDE8] hover:text-white transition-all duration-700 font-semibold"
         >
           <i className="fa-regular fa-user mr-3 transition-all-transform duration-700 group-hover:text-lg"></i>
           About
@@ -32,7 +32,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, dark }) => {
         <a
           href="#skills"
           onClick={() => setMenuOpen(false)}
-          className="group px-4 py-3 rounded-xl hover:bg-[#463BFF] hover:text-white transition-all duration-700 font-semibold"
+          className="group px-4 py-3 rounded-xl hover:bg-[#21CDE8] hover:text-white transition-all duration-700 font-semibold"
         >
           <i className="fa-solid fa-microchip mr-3 transition-all-transform duration-700 group-hover:text-lg"></i>
           Skills
@@ -41,7 +41,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, dark }) => {
         <a
           href="#projects"
           onClick={() => setMenuOpen(false)}
-          className="group px-4 py-3 rounded-xl hover:bg-[#463BFF] hover:text-white  font-semibold transition-all duration-700"
+          className="group px-4 py-3 rounded-xl hover:bg-[#21CDE8] hover:text-white  font-semibold transition-all duration-700"
         >
           <i className="fa-solid fa-code mr-3 transition-all-transform duration-700 group-hover:text-lg"></i>
           Projects
@@ -50,7 +50,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, dark }) => {
         <a
           href="#contact"
           onClick={() => setMenuOpen(false)}
-          className="group px-4 py-3 rounded-xl hover:bg-[#463BFF] hover:text-white  font-semibold transition-all duration-700"
+          className="group px-4 py-3 rounded-xl hover:bg-[#21CDE8] hover:text-white  font-semibold transition-all duration-700"
         >
           <i className="fa-regular fa-envelope mr-3 transition-all-transform duration-700 group-hover:text-lg"></i>
           Contact

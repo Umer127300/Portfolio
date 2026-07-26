@@ -11,11 +11,14 @@ const About = ({dark, setDark}) => {
         {/* Left Side */}
         <div className='flex justify-center lg:justify-start ]'>
         <div className="relative flex justify-center w-full max-w-105 min-h-105px lg:min-h-138 ">
-          <div className=" w-full max-w-105 h-92 sm:h-112 md:h-117 mt-16
+          <div className={ `w-full max-w-105 h-92 sm:h-112 md:h-117 mt-16
   rounded-[40px]
-  bg-white/20
   backdrop-blur-xl
-  border border-cyan-200">
+  border border-cyan-200
+  ${
+    dark? 'bg-white/20':'text-[#65878c]'
+  }
+  `}>
 
     <img
     src="/image.jpeg"
@@ -29,7 +32,7 @@ const About = ({dark, setDark}) => {
 </div>
         {/* Right Side */}
         <div className='mt-15 md:mt-0 flex flex-col justify-center text-center lg:text-left w-full'>
-              <h2 className="text-[#1de849] text-sm tracking-[0.2rem] uppercase font-medium pl-8">
+              <h2 className="text-[#1de849] text-sm tracking-[0.2rem] uppercase font-medium pl-6">
  who i am
 </h2>
           <h2 className={`text-black text-wrap text-3xl mt-2

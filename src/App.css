@@ -33,3 +33,17 @@ html, body, #root {
   width: 100%;
   overflow-x: hidden; 
 }
+
+@keyframes onlinePulse {
+  0% {
+    box-shadow: 0 0 0 0 #1de849cc;
+  }
+
+  100% {
+    box-shadow: 0 0 0 6px rgba(29, 232, 73, 0);
+  }
+}
+
+.online-pulse {
+ animation: onlinePulse 3s ease-out infinite;
+}

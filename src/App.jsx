@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Home from './components/Home'
 import Hero from './components/Hero'
+import './App.css';
 import { useState } from 'react'
 import Skill from './components/Skill'
 import Project from './components/Project'
