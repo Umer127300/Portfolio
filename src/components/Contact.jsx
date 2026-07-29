@@ -135,11 +135,12 @@ if (window.$crisp) {
   })}
 </div>
       <div   onClick={openChat} className='flex justify-center items-center mt-15 mb-8'>
-        <div className={`h-min-42 w-full sm:w-140 hover:-translate-y-2 transition-all duration-500  text-black border border-solid border-black/10 hover:border-[#76e3f4]  rounded-2xl flex flex-col sm:flex-row py-7 pr-7 pl-3 justify-center items-center sm:justify-start sm:items-start
+        <div className={`h-min-42 w-full sm:w-140 hover:-translate-y-2 transition-all duration-500  text-black border border-solid  hover:border-[#76e3f4]  rounded-2xl flex flex-col sm:flex-row py-7 pr-7 pl-3 justify-center items-center sm:justify-start sm:items-start 
           ${
-            dark? 'bg-white':'bg-[#1F2937]'
+            dark? 'bg-white border-black/10':'bg-black/50 border-white/20'
           }
           `}>
+            {/* bg-[#1F2937] */}
         <div className='h-full w-[19%] flex justify-center items-center sm:flex_'>
           <div className='relative border-2 border-solid border-blue-400 h-13 w-13 rounded-full pl-3 pt-0.5'>
              <img src="user.png" className='h-10 w-10 ' />

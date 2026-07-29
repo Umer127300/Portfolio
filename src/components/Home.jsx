@@ -1,13 +1,14 @@
 import React from 'react'
 import "../App.css";
 import { FaArrowRight  } from "react-icons/fa";
+import {TypeAnimation} from "react-type-animation"
 const Home = ({dark , setDark}) => {
   return (
     <div>
       
       <section
   id="home"
-  className="min-h-screen flex flex-col justify-center items-center text-center px-5"
+  className="min-h-screen flex flex-col justify-center items-center text-center px-5 py-24"
 >
   <p className={`text-lg md:text-xl
      ${
@@ -30,6 +31,24 @@ const Home = ({dark , setDark}) => {
     `}>
     Frontend Developer
   </h2>
+<h1 className='text-5xl font-bold text-cyan-500'>
+Turing Ideas Into High-Impact 
+<br/>
+<TypeAnimation
+sequence={[
+  'Accessible Data-Driven Products', 2000,
+'Fast' , 2000,
+'Reliable Beautiful Web Experience', 2000,
+]}
+wrapper='span'
+speed={200}
+style={{color:'#10B981'}}
+repeat={Infinity}
+className='border-b-8 border-green-400'
+/>
+<span className='text-green-400'></span>
+</h1>
+
 
   <p className={`mt-6 max-w-2xl  leading-8
     
@@ -44,7 +63,7 @@ const Home = ({dark , setDark}) => {
 
   <div className="mt-8 flex flex-col w-full  sm:flex sm:flex-row justify-center gap-4">
    <a
-  href="#project"
+  href="#Project"
   className="px-8 py-4 rounded-full text-white font-semibold
              bg-[#21CDE8]  hover:bg-[#59d4e7]
              shadow-[0_10px_30px_rgba(99,102,241,0.35)]
@@ -57,13 +76,14 @@ const Home = ({dark , setDark}) => {
 </a>
 
     <a
-      href="#contact"
+      href="#Contact"
       className={`px-8 py-4 rounded-full font-semibold
              border border-black/10 hover:text-[#21CDE8]
              transition-all duration-500 
                 hover:scale-105 
-                ${dark? 'text-black bg-white':'text-white  bg-[#334155]'}
+                ${dark? 'text-black bg-white':'text-white  bg-[#1A2236]/90'}
                 `}
+    
     >
       Contact Me 
      

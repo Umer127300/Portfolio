@@ -6,24 +6,24 @@ const About = ({dark, setDark}) => {
       id="about"
       className=" text-black/70 py-19 px-4 sm:px-8 md:px-15 lg:px-20"
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-5  items-center">
+      <div className="max-w-7xl  grid lg:grid-cols-[40%_60%] gap-5  items-center">
 
         {/* Left Side */}
         <div className='flex justify-center lg:justify-start ]'>
-        <div className="relative flex justify-center w-full max-w-105 min-h-105px lg:min-h-138 ">
-          <div className={ `w-full max-w-105 h-92 sm:h-112 md:h-117 mt-16
-  rounded-[40px]
+        <div className="relative flex justify-center w-full max-w-87 min-h-105 lg:min-h-138 ">
+          <div className={ `w-full max-w-87 h-92 sm:h-112 md:h-117 mt-16
+  rounded-3xl
   backdrop-blur-xl
   border border-cyan-200
   ${
-    dark? 'bg-white/20':'text-[#65878c]'
+    dark? 'bg-[#E6FCFF]':'bg-[#0B1020]'
   }
   `}>
 
     <img
     src="/image.jpeg"
     alt=""
-    className=" absolute bottom-0 z-10 h-110 w-auto   sm:h-137 md:h-145 object-cover drop-shadow-2xl "
+    className=" absolute bottom-0 z-10 h-110 max-w-87   sm:h-134 md:h-142 object-cover drop-shadow-2xl "
   />
   </div>
 
@@ -92,9 +92,9 @@ md:text-4xl font-bold mb-4 gap-3
            href="/Umer cv.pdf"
       download="Umer cv.pdf"
           
-          className={`text-black w-full lg:w-fit px-6 py-3 rounded-full font-bold  active:scale-95 transition-all duration-500 hover:scale-110 flex gap-2 justify-center  border border-solid border-black/15 
+          className={`text-black w-full lg:w-fit px-6 py-3 rounded-full font-bold text-md  active:scale-95 transition-all duration-500 hover:scale-110 flex gap-2 justify-center  border border-solid border-black/15 
                 ${
-            dark? 'text-black bg-white hover:text-[#44bccf]  ':'text-white  bg-[#334155] hover:text-white '
+            dark? 'text-black bg-white hover:text-[#44bccf]  ':'text-white  bg-[#1A2236]/90 hover:text-white '
            } 
             
 
@@ -102,7 +102,7 @@ md:text-4xl font-bold mb-4 gap-3
               
             >
             Download CV
-           <ArrowDownToLine />
+           <ArrowDownToLine className='text-sm '/>
           </a>
           </div>
         </div>
