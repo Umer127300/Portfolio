@@ -29,7 +29,7 @@ document.body.classList.toggle('dark')
     right-3 shadow-[0_4px_15px_rgba(0,0,0,0.05)]
        
         ${
-      dark ? ' bg-[#FAFAFA] border-gray-200   ': ' border-[#334155]   '
+      dark ? ' bg-[#FAFAFA] border-gray-200   ': ' bg-[#1E293B] border-[#334155]   '
     }
       ` }>
 
@@ -49,13 +49,13 @@ document.body.classList.toggle('dark')
   <div  
   className={`hidden lg:flex h-13.5 items-center rounded-2xl gap-2 text-sm font-extrabold border border-solid  pl-3 pr-3  
     ${
-      dark ? ' bg-slate-200 border-slate-200    text-black/60  ': '  border-[#334155]  text-white/70  '
+      dark ? ' bg-slate-200 border-slate-200    text-black/60  ': ' bg-[#1E293B] border-[#334155]  text-white/70  '
     }
   `}>
     <a href="#home"
     className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center transition-all duration-500 
 ${
-      dark ? ' bg-white text-[#21CDE8]  ': ' bg-[#1A2236]/90  text-white   '
+      dark ? ' bg-white text-[#21CDE8]  ': ' bg-[#334155]  text-white   '
     }
 
    ` }
@@ -65,7 +65,7 @@ ${
      className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70   transition-all duration-500
       
       ${
-      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#1A2236]/90 hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
       
       
@@ -75,7 +75,7 @@ ${
     <a href="#Skills"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70 transition-all duration-500
         ${
-      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': '  hover:bg-[#1A2236]/90 hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
      
         `}
@@ -84,7 +84,7 @@ ${
     <a href="#Project"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70  transition-all duration-500
         ${
-      dark ? ' hover:bg-white  hover:text-[#21CDE8]': '  hover:bg-[#1A2236]/90 hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8]': ' hover:bg-[#334155] hover:text-white/95  '
     }
     
         `}
@@ -93,7 +93,7 @@ ${
     <a href="#Contact"
       className={`group font-semibold px-4 py-2 rounded-xl inline-flex gap-2 items-center  text-black-70  transition-all duration-500
          ${
-      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': '  hover:bg-[#1A2236]/90 hover:text-white/95  '
+      dark ? ' hover:bg-white  hover:text-[#21CDE8] ': ' hover:bg-[#334155] hover:text-white/95  '
     }
      
         `}

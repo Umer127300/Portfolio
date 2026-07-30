@@ -19,19 +19,18 @@ const Home = ({dark , setDark}) => {
   </p>
 
   <h1 className="text-6xl md:text-8xl font-black">
-  <span className="name-effect">
+  <span className="text-[#07c5e3]">
     Umer
   </span>
 </h1>
 
-  <h2 className={`mt-4 text-2xl md:text-4xl font-bold  
-      ${
-      dark ? '  text-gray-700 ': ' text-gray-300  '
-    }
-    `}>
+  <h2 className={`mt-4 text-2xl md:text-4xl font-bold  text-[#D4A017]
+    `}> 
     Frontend Developer
   </h2>
-<h1 className='text-5xl font-bold text-cyan-500'>
+<h1 className={`text-5xl font-bold 
+      ${dark?'text-black':'text-white'}
+  `}>
 Turing Ideas Into High-Impact 
 <br/>
 <TypeAnimation
@@ -41,16 +40,16 @@ sequence={[
 'Reliable Beautiful Web Experience', 2000,
 ]}
 wrapper='span'
-speed={200}
+speed={20}
 style={{color:'#10B981'}}
 repeat={Infinity}
-className='border-b-8 border-green-400'
+className='pt-12'
 />
 <span className='text-green-400'></span>
 </h1>
 
 
-  <p className={`mt-6 max-w-2xl  leading-8
+  <p className={`mt-4 max-w-2xl  leading-8
     
      ${
       dark ? '  text-gray-600 ': ' text-gray-300  '
@@ -81,7 +80,7 @@ className='border-b-8 border-green-400'
              border border-black/10 hover:text-[#21CDE8]
              transition-all duration-500 
                 hover:scale-105 
-                ${dark? 'text-black bg-white':'text-white  bg-[#1A2236]/90'}
+                ${dark? 'text-black bg-white':'text-white  bg-[#334155]'}
                 `}
     
     >

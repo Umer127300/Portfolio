@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Home from './components/Home'
-import Hero from './components/Hero'
 import './App.css';
 import { useState } from 'react'
 import Skill from './components/Skill'
@@ -10,8 +9,7 @@ import Project from './components/Project'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Background from './components/Background'
-import WhiteBackground from "./components/WhiteBackground";
+
 
 const App = () => {
   
@@ -19,11 +17,11 @@ const App = () => {
   const [dark, setDark] = useState(true)
   return (
     <div className= {`relative
-      ${dark ? " text-black min-h-screen  w-full" : ` text-white min-h-screen  w-full `}
+      ${dark ? " text-black min-h-screen  w-full bg-[#F7F7F5]" : ` text-white min-h-screen  w-full bg-[#111827] `}
       `} 
-      // bg-[#111827]
+      
     >
-         {dark ?<WhiteBackground />  :<Background /> }
+         
     <Navbar  dark={dark} setDark={setDark}/>
     <Home    dark={dark} setDark={setDark}/>
     <About    dark={dark} setDark={setDark}/>

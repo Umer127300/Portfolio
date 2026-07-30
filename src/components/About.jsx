@@ -1,17 +1,59 @@
 import React from 'react'
 import { ArrowDownToLine } from 'lucide-react';
+import { FaJs, FaReact,  FaGithub, FaLightbulb } from "react-icons/fa6";
+import { SiTailwindcss, } from "react-icons/si";
+import { IoMdColorPalette } from "react-icons/io";
 const About = ({dark, setDark}) => {
+   const tools = [
+         {Name:"React Development", 
+          icon: <FaReact className=" text-2xl sm:text-4xl text-white" />,
+          bgColor:'bg-[#00d4ff]',
+          color:'text-cyan-500'
+        },
+        {Name:"JavaScript (ES6+)",
+         icon: <FaJs className=" text-2xl sm:text-4xl text-yellow-400" />,
+         bgColor:'bg-[#5b5135]',
+         color:'text-yellow-600'
+        },
+        
+        {Name:"Tailwind CSS", 
+            icon: <SiTailwindcss className=" text-2xl sm:text-4xl text-white" />,
+            bgColor:'bg-[#06b6d4]',
+            color:'text-[#06b6d4]',
+        },
+      {Name:"GitHub",
+                 icon:<FaGithub className={` text-2xl sm:text-4xl 
+                  ${dark? ' text-black': 'text-white'}
+                  `} />,
+                   bgColor:`${dark?'bg-black/10':'bg-white/5'}`,
+                   color:` 
+                  ${dark? ' text-black': 'text-white'}
+                  `
+             },
+             {Name:"UI/UX Focused", 
+          icon: <IoMdColorPalette className=" text-2xl sm:text-4xl text-white" />,
+          bgColor:'bg-purple-600',
+          color:'text-purple-600'
+        
+        },
+        {Name:"Problem Solving", 
+          icon: <FaLightbulb className=" text-2xl sm:text-4xl text-white" />,
+          bgColor:'bg-green-600',
+        color:'text-green-600'
+        }
+      ];
+
   return (
     <section
       id="about"
-      className=" text-black/70 py-19 px-4 sm:px-8 md:px-15 lg:px-20"
+      className=" text-black/70 py-19 px-4 sm:px-8 md:px-15 lg:px-20  "
     >
       <div className="max-w-7xl  grid lg:grid-cols-[40%_60%] gap-5  items-center">
 
         {/* Left Side */}
         <div className='flex justify-center lg:justify-start ]'>
         <div className="relative flex justify-center w-full max-w-87 min-h-105 lg:min-h-138 ">
-          <div className={ `w-full max-w-87 h-92 sm:h-112 md:h-117 mt-16
+          <div className={ `w-full max-w-87  h-107 sm:h-112 md:h-117 mt-16
   rounded-3xl
   backdrop-blur-xl
   border border-cyan-200
@@ -23,7 +65,7 @@ const About = ({dark, setDark}) => {
     <img
     src="/image.jpeg"
     alt=""
-    className=" absolute bottom-0 z-10 h-110 max-w-87   sm:h-134 md:h-142 object-cover drop-shadow-2xl "
+    className=" absolute bottom-0 z-10 h-128 w-full  max-w-87   sm:h-134 md:h-142 object-cover drop-shadow-2xl "
   />
   </div>
 
@@ -65,49 +107,59 @@ md:text-4xl font-bold mb-4 gap-3
             I love building beautiful interfaces and solving real-world
             problems through code.
           </p>
+                       <div className='relative'>
+                        
+                       <div className='grid sm:grid-cols-2 gap-5'>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <div>
-              <h3 className="text-[#44bccf]  font-semibold">Name</h3>
-              <p className={`${dark? 'text-black':'text-white'}`}>Umer Zaman</p>
-            </div>
+                      {tools.map((elem, index)=>{
+                       return   <div
+                          key={index} 
+                          className={`relative w-max-80 h-15 rounded-xl flex gap-3 py-2 border hover:border-2 hover:border-[#76e3f4] hover:-translate-y-1
+                     items-center px-3 transition-all duration-500
+                           ${dark?'bg-white text-black border-black/15':'bg-[#334155] text-white border-white/15 '}
+                            `}>
+                               <div className={`h-12 w-12 rounded-lg flex justify-center items-center flex-shrink-0
+                          ${elem.bgColor}
+                          `}>{elem.icon}</div> 
+                        <div className={`flex justify-between items-center w-full
+                           
+                          `}><h3 className={`text-md font-bold  
+                          ${elem.color}
+                          `}>{elem.Name}</h3>
+                        <h3>0{index+1}</h3>
+                        </div>
+                         
+                         </div>
+                        
+                      })}
+                      
 
-            <div>
-              <h3 className="text-[#44bccf]   font-semibold">Email</h3>
-              <p className={`${dark? 'text-black':'text-white'}`}>umer127300@gmail.com</p>
             </div>
-
-            <div>
-              <h3 className="text-[#44bccf]   font-semibold">Location</h3>
-              <p className={`${dark? 'text-black':'text-white'}`}>Pakistan</p>
+             
             </div>
-
-            <div>
-              <h3 className="text-[#44bccf]   font-semibold">Experience</h3>
-              <p className={`${dark? 'text-black':'text-white'}`}>Frontend Developer</p>
-            </div>
-          </div>
-         <div className='flex justify-center lg:justify-start px-8' >
-          <a 
-           href="/Umer cv.pdf"
-      download="Umer cv.pdf"
           
-          className={`text-black w-full lg:w-fit px-6 py-3 rounded-full font-bold text-md  active:scale-95 transition-all duration-500 hover:scale-110 flex gap-2 justify-center  border border-solid border-black/15 
+         <div className='flex justify-center  px-10 mt-8 ' >
+          <a 
+           href="/Umer-cv.pdf"
+      download="/Umer-cv.pdf"
+          
+          className={`text-black w-full lg:w-fit px-6 py-3 rounded-full font-bold text-md  active:scale-95 transition-all duration-500 hover:scale-110 flex gap-2 justify-center  border border-solid border-black/15 hover:text-[#44bccf] 
                 ${
-            dark? 'text-black bg-white hover:text-[#44bccf]  ':'text-white  bg-[#1A2236]/90 hover:text-white '
+            dark? 'text-black bg-white  ':'text-white bg-[#334155]'
            } 
             
 
             `}
               
             >
-            Download CV
+            Download Resume
            <ArrowDownToLine className='text-sm '/>
           </a>
           </div>
+          </div>
         </div>
 
-      </div>
+
     </section>
   )
 }

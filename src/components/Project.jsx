@@ -26,43 +26,49 @@ const Project = ({dark, setDark}) => {
     image:'logo imge.jpeg',
  websiteLink:'https://currency-converter-nine-liard-44.vercel.app',
     getHubLink:'https://github.com/Umer127300/currency-converter',
+    tagName:'Completed'
    },
    {Name:'Guess Number Game',
      Discription:'Guess Number Game Made For Fun',
       DsptColor:'text-cyan-500',
       borderColor:'border-cyan-500',
      shadowColor:'shadow-cyan-300',
-     image:'user.png',
-       websiteLink:'https://currency-converter-nine-liard-44.vercel.app',
-    getHubLink:'https://github.com/Umer127300/currency-converter',
+     image:'game2.jpeg',
+       websiteLink:'https://games-three-ochre.vercel.app/',
+    getHubLink:'https://github.com/Umer127300/Games',
+     tagName:'Completed'
    
+   },
+   {Name:'Rock Paper Scissor Game',
+     Discription:'Rock Paper Scissors Built for a Fun and Interactive Experience',
+      DsptColor:'text-blue-500',
+      borderColor:'border-blue-600',
+     shadowColor:'shadow-blue-500',
+       image:'game.jpeg',
+      websiteLink:'https://game-project-psi-eosin.vercel.app/',
+    getHubLink:'https://github.com/Umer127300/game-project',
+     tagName:'Completed'
    },
      {Name:'Ecomerce Project',
      Discription:'E-Commerce Store Built for Seamless Shopping',
       DsptColor:'text-green-500',
       borderColor:'border-green-600',
      shadowColor:'shadow-green-500',
-      image:'image.jpeg',
-       websiteLink:'https://currency-converter-nine-liard-44.vercel.app',
-    getHubLink:'https://github.com/Umer127300/currency-converter',
+      image:'',
+       websiteLink:'',
+    getHubLink:'',
+     tagName:'In Coming'
    },
-     {Name:'Amazon Clone ',
-     Discription:'Amazon Clone Created for a Real Shopping Experience',
-      DsptColor:'text-blue-500',
-      borderColor:'border-blue-600',
-     shadowColor:'shadow-blue-500',
-       image:'logo imge.jpeg',
-      websiteLink:'https://currency-converter-nine-liard-44.vercel.app',
-    getHubLink:'https://github.com/Umer127300/currency-converter',
-   },
+     
      {Name:'Notes Project',
      Discription:'Notes App Designed for Quick Note-Taking',
       DsptColor:'text-purple-500',
       borderColor:'border-purple-600',
     shadowColor:'shadow-purple-500',
-      image:'logo imge.jpeg',
-     websiteLink:'https://currency-converter-nine-liard-44.vercel.app',
-    getHubLink:'https://github.com/Umer127300/currency-converter',
+      image:'',
+     websiteLink:'',
+    getHubLink:'',
+     tagName:'In Coming'
    },
     
   ]
@@ -99,9 +105,11 @@ const Project = ({dark, setDark}) => {
            className={ ` group flex-shrink-0 text-black border-2 border-solid ${elem.borderColor} w-65 min-h-120 rounded-2xl text-left hover:shadow-[0_12px_15px] ${elem.shadowColor}     transition-all duration-300 
             ${dark?'bg-white ':'bg-black/2 '}
             `}>
-            <div className='overflow-hidden rounded-t-xl'><img src={elem.image} className=' w-full h-40 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-500 '/></div>
+            <div className='relative overflow-hidden rounded-t-xl'><h4 className='absolute h-7 w-25 flex justify-center items-center rounded-full border border-green-500 z-10 top-7 text-orange-400 right-5 font-semibold text-md'>{elem.tagName}</h4><img src={elem.image} className=' w-full h-40 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-500 '/>
+                 
+            </div>
             <div className='flex flex-col '>
-              <h2 className={`px-4  text-lg font-bold  mt-2
+              <h2 className={`px-4  text-lg font-bold  mt-2 
                 ${dark?'text-black':'text-white'}
                 `}>{elem.Name}</h2>
               <p className={`mx-4 mb-3 text-sm font-bold ${elem.DsptColor}`}>{elem.Discription}</p>
@@ -121,12 +129,14 @@ const Project = ({dark, setDark}) => {
             
             </div>
             <a 
+            target="_blank"
              href={elem.websiteLink}
             className='group bg-[#06d6f6] max-w-full  h-17 rounded-lg mx-4 mt-4 p-2 transition-all duration-500 hover:scale-105   flex justify-center items-center' > <FaGlobe className={`  text-xl  mr-2 group-hover:scale-110 transition-all duration-500 m-3
                         ${dark? ' text-black': 'text-white'}
                         `} /><h3 className='text-sm font-bold px-7'>Explore Flow on Website</h3></a>
             <a 
               href={elem.getHubLink}
+              target="_blank"
             className={`group max-w-full /30 mx-4 mt-4 p-2 rounded-lg transition-all duration-500 hover:-translate-y-1 border   flex justify-center items-center
             ${dark? ' bg-white border-black/20  hover:border-black/60 ': 'bg-gray-800 border-white/20 hover:border-white/60 '}
             `}> <FaGithub className={`  text-md  mr-2 group-hover:scale-110 transition-all duration-500

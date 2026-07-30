@@ -1,21 +1,4 @@
-.name-effect {
-  background: linear-gradient(
-    90deg,
-    #8d6ea6,
-    #4294f2,
-    #58aec1,
-    #22c55e,
-    #d51a90,
-    #8d6ea6
-  );
 
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-
-  animation: shine 8s linear infinite;
-}
 
 @keyframes shine {
   from {
